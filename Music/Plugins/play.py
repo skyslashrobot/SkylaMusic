@@ -138,7 +138,7 @@ async def play(_, message: Message):
         fucksemx = 1
         what = "Audio Searched"
         await LOG_CHAT(message, what)
-        mystic = await message.reply_text(f"**🔄 Memproses Lagu Anda....**")
+        mystic = await message.reply_text(f"**🔄 Sabar mek lagi proses....**")
         if audio.file_size > 157286400:
             await mystic.edit_text("Ukuran File Audio Harus Kurang dari 150 mb") 
             return
@@ -163,7 +163,7 @@ async def play(_, message: Message):
             else file_name,
         )
         title = "Audio yang Dipilih dari Telegram"
-        link = "https://t.me/skylasupport"
+        link = "https://t.me/SkyslashSupport"
         thumb = "cache/IMG_20220111_150054_612.jpg"
         videoid = "smex1"
     elif url:
